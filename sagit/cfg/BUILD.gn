@@ -13,31 +13,31 @@
 
 import("//build/ohos.gni")
 
-ohos_prebuilt_etc("init.rk3568.cfg") {
-  source = "init.rk3568.cfg"
-  part_name = "rockchip_products"
+ohos_prebuilt_etc("init.sagit.cfg") {
+  source = "init.sagit.cfg"
+  part_name = "qualcomm_products"
   install_images = [ chipset_base_dir ]
   install_enable = true
 }
 
-ohos_prebuilt_etc("init.rk3568.usb.cfg") {
-  source = "init.rk3568.usb.cfg"
-  part_name = "rockchip_products"
+ohos_prebuilt_etc("init.sagit.usb.cfg") {
+  source = "init.sagit.usb.cfg"
+  part_name = "qualcomm_products"
   install_images = [ chipset_base_dir ]
   install_enable = true
 }
 
-ohos_prebuilt_etc("fstab.rk3568") {
-  source = "fstab.rk3568"
-  part_name = "rockchip_products"
+ohos_prebuilt_etc("fstab.sagit") {
+  source = "fstab.sagit"
+  part_name = "qualcomm_products"
   install_images = [ vendor_base_dir ]
   install_enable = true
 }
 
 group("init_configs") {
   deps = [
-    ":fstab.rk3568",
-    ":init.rk3568.cfg",
-    ":init.rk3568.usb.cfg",
+    ":fstab.sagit",
+    ":init.sagit.cfg",
+    ":init.sagit.usb.cfg",
   ]
 }

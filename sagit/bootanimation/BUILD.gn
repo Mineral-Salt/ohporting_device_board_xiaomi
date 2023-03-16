@@ -12,17 +12,17 @@
 # limitations under the License.
 import("//build/ohos.gni")
 
-BOOTANIMATION_DIR = "//device/board/hihope/${device_name}/bootanimation"
+BOOTANIMATION_DIR = "//device/board/xiaomi/${device_name}/bootanimation"
 
 ohos_prebuilt_etc("bootanimation-720x1280") {
   source = "$BOOTANIMATION_DIR/bootanimation-720x1280.raw"
-  part_name = "rockchip_products"
+  part_name = "qualcomm_products"
   install_enable = true
 }
 
 ohos_prebuilt_etc("bootanimation-1920x1080") {
   source = "$BOOTANIMATION_DIR/bootanimation-1920x1080.raw"
-  part_name = "rockchip_products"
+  part_name = "qualcomm_products"
   install_enable = true
 }
 

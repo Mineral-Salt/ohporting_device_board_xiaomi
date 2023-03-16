@@ -1,11 +1,11 @@
 {
-    "subsystem": "rockchip_products",
+    "subsystem": "qualcomm_products",
     "parts": {
-        "rockchip_products": {
+        "qualcomm_products": {
             "module_list": [
-                "//device/board/hihope/${device_name}:rk3568_group",
-                "//vendor/hihope/${product_name}/bluetooth:libbt_vendor",
-                "//vendor/hihope/${product_name}/bluetooth:BCM4362A2.hcd"
+                "//device/board/xiaomi/${device_name}:sagit_group",
+                "//vendor/xiaomi/${product_name}/bluetooth:libbt_vendor",
+                "//vendor/xiaomi/${product_name}/bluetooth:BCM4362A2.hcd"
             ],
             "test_list": [
                 "//kernel/linux/build/test:linuxkerneltest"
